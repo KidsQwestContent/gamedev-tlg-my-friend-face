@@ -3908,7 +3908,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.WaitForPreviousActions,
 		C3.Plugins.DrawingCanvas.Acts.SaveImage,
 		C3.Plugins.Sprite.Acts.LoadURL,
-		C3.Plugins.DrawingCanvas.Exps.SavedImageURL
+		C3.Plugins.DrawingCanvas.Exps.SavedImageURL,
+		C3.Plugins.Sprite.Acts.MoveToBottom
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4154,8 +4155,11 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject("mouth");
 		},
-		() => "done",
 		() => 75,
+		() => "done",
+		() => "RESULT FACE",
+		() => 960,
+		() => 498,
 		() => "back"
 ];
 
