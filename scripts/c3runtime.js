@@ -3908,9 +3908,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.WaitForPreviousActions,
 		C3.Plugins.DrawingCanvas.Acts.SaveImage,
 		C3.Plugins.Sprite.Acts.LoadURL,
-		C3.Plugins.DrawingCanvas.Exps.SavedImageURL,
-		C3.Plugins.DrawingCanvas.Acts.ClearCanvas,
-		C3.Plugins.System.Exps.rgba
+		C3.Plugins.DrawingCanvas.Exps.SavedImageURL
 	];
 };
 self.C3_JsPropNameTable = [
@@ -3949,7 +3947,7 @@ self.C3_JsPropNameTable = [
 	{DrawingCanvas: 0},
 	{image_loader: 0},
 	{result_badge: 0},
-	{result_button_prev: 0},
+	{result_button_restart: 0},
 	{DragDrop: 0},
 	{eyes: 0},
 	{nose: 0},
@@ -4158,11 +4156,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "done",
 		() => 75,
-		() => "back",
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(0, 0, 0, 0);
-		}
+		() => "back"
 ];
 
 
